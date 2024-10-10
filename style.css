@@ -1,0 +1,178 @@
+/*Style CSS*/
+/*coolors https://coolors.co/753ab0-4d2fa5-37279e-c0ccfc-a6b9fb*/
+
+
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #F0F8FF; /*light white*/
+	color: #0D0907; /*black*/
+	line-height: 1.6;
+	padding: 20px;
+	max-width: 500px;
+	text-align: center;
+	margin-left: auto;
+  	margin-right: auto;
+}
+
+
+main {
+	text-align: center;
+}
+
+header {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+header h1 {
+	font-size: 50px;
+	color: #37279e; /*purple*/
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h3 {
+	color: #4d2fa5;
+	font-size: 15px;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+	font-size: 28px;
+	margin-bottom: 10px;
+}
+
+
+section {
+	background: #FBFCF8; /*to verify #fbfxf8*/
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+
+form label {
+	display: block;
+	margin-bottom: 1px;
+	margin-top: 30px;
+	font-weight: bold;
+}
+
+
+form button {
+	/*padding: 8px 90px;*/
+	background-color: #4d2fa5;
+	color: #faf9f6;
+	cursor: pointer;
+	border: none;
+	font-size: 15px;
+	margin-top: 10px;
+	border-radius: 4px;
+	box-sizing: border-box;
+	width: 300px;
+	height: 40px;
+}
+
+
+button:hover {
+	background-color: #37279e;
+}
+
+
+form input {
+	width: 300px;
+	height: 30px;
+}
+
+
+#statistics button {
+	background-color: #4d2fa5;
+	color: #faf9f6;
+	cursor: pointer;
+	border: none;
+	font-size: 15px;
+	margin-top: 10px;
+	border-radius: 4px;
+	box-sizing: border-box;
+	width: 90px;
+	height: 40px;
+}
+
+#statistics button:hover {
+	background-color: #37279e;
+}
+
+#instructions_copyright footer p {
+	font-size: 12px;
+}
+
+
+form button, .task_complete_button, #statistics button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover, .task_complete_button:hover, #statistics button:hover {
+    background-color: #37279e; /* Colore hover */
+    transform: scale(1.05);    /* Leggera espansione al passaggio del mouse */
+}
+
+
+
+#task_list {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+#completed_tasks_list {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	background-color: #f1f8e9;
+	border: 1px solid #ddd;
+	margin-bottom: 10px;
+}
+
+
+.task_timer {
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	color: #bf4342;
+	margin-top: 10px;
+}
+
+
+.task_name {
+	padding: 20px;
+    display: block;
+    text-align: center;
+    word-wrap: break-word; /* Avvolge le parole lunghe */
+    white-space: normal;   /* Consente al testo di andare a capo */
+}
+
+.task_complete_button {
+	background-color: #4d2fa5;
+	color: #faf9f6;
+	cursor: pointer;
+	border: none;
+	font-size: 15px;
+	border-radius: 4px;
+	box-sizing: border-box;
+	height: 30px;
+	margin-bottom: 10px;
+}
+
+
+#task_form {
+	max-width: 600px;
+	margin-left: auto;
+  	margin-right: auto;
+}
+

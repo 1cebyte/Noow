@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="To-Do list app">
+	<meta name="keywords" content="HTML, CSS, JavaScript, To-Do list, Ice Byte, todo list, Noow">
+	<meta name="author" content="Ice Byte">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Noow: take a task!</title>
+</head>
+
+<body>
+	<header>
+		<h1>Noow</h1>
+		<h3>Not a simple to-do list app</h3>
+	</header>
+
+
+	<main>
+		<!--Add new task section-->
+		<section id="add_task">
+			<h2>Add new task</h2>
+			<form id="task_form">
+				<label for="task_name">Name of the task:</label>
+				<input type="text" id="task_name" required>
+
+				<label for="task_hours">Hours:</label>
+				<input type="number" id="task_hours" min="0" value="0" required>
+
+				<label for="task_minutes">Minutes:</label>
+				<input type="number" id="task_minutes" min="0" value="0" required>
+
+				<br><button id="submit">Add task</button>
+			</form>
+		</section>
+
+
+
+
+		<!--Task in progress-->
+		<section id="current_tasks">
+			<h2>Task in progress</h2>
+			<ul id="task_list"></ul>
+			<p id="reset_message" style="display: none; color: red;">All tasks have been removed!</p> <!-- Messaggio nascosto -->
+		</section>
+
+
+
+		<!--Statistic section-->
+		<section id="statistics">
+			<h2>Statistics</h2>
+			<p>Completed tasks: <span id="completed_tasks">0</span></p>
+			<p>Expired tasks: <span id="expired_tasks">0</span></p>
+			<button id="reset_button">Reset</button>
+		</section>
+
+
+
+		<!--Completed tasks-->
+		<section id="completed_section">
+			<h2>Completed tasks</h2>
+			<ul id="completed_tasks_list"></ul>
+		</section>
+
+
+
+		<!--Instructions and copyright-->
+		<section id="instructions_copyright">
+			<h2>Instructions</h2>
+			<p>Enter a task and set a timer to complete it by: you'd better hurry...when the timer runs out you'll lose all the other tasks you've marked 😏</p>
+			<footer>
+				<p>&copy; <span id="currentYear"></span> Noow made by Ice Byte</p>
+				<p><a href="https://icebyte.carrd.co/">Visit - icebyte.co</p>
+			</footer>
+		</section>
+
+	</main>
+
+	<script src="script.js"></script>
+
+</body>
+</html>
